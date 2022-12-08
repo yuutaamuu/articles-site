@@ -1,6 +1,5 @@
-import styles from '../NewContents/newContents.module.scss'
+import styles from '../NewContents/newContents.module.css'
 import type { Article } from '../../types/article'
-import { client } from '../../libs/client'
 
 type Props = {
   specials: Array<Article>

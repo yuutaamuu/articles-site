@@ -33,12 +33,8 @@ export default function HeroArea({ tops }: Props) {
         loop={true}
       >
         {tops.map((top) => (
-          <SwiperSlide>
-            <a
-              key={top.id}
-              className={styles.heroArea__anchor}
-              href={`/articles/${top.id}`}
-            >
+          <SwiperSlide key={top.id}>
+            <a className={styles.heroArea__anchor} href={`/articles/${top.id}`}>
               <img src={top.eyecatch.url} alt="" />
               <p className={styles.heroArea__anchor__category}>
                 {top.category.name}

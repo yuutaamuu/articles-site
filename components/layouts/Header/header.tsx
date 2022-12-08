@@ -1,5 +1,5 @@
 import { Article } from '../../../types/article'
-import styles from './header.module.scss'
+import styles from './header.module.css'
 
 type Props = {
   specials: Array<Article>

@@ -1,10 +1,6 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { client } from '../libs/client'
-import Link from 'next/link'
-
 import type { Article } from '../types/article'
 import Header from '../components/layouts/Header/header'
 import HeroArea from '../components/HeroArea/heroArea'
@@ -28,7 +24,7 @@ export default function Home({ blogs, specials, tops }: Props) {
   const [isShow, setIsShow] = useState(true)
 
   useEffect(() => {
-    let loadingShow = setTimeout(() => {
+    const loadingShow = setTimeout(() => {
       setIsShow(false)
     }, 3000)
 

@@ -1,6 +1,5 @@
-import styles from './newContents.module.scss'
+import styles from './newContents.module.css'
 import type { Article } from '../../types/article'
-import { client } from '../../libs/client'
 
 type Props = {
   blogs: Array<Article>
