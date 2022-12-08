@@ -40,7 +40,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended"
+    "prettier"
+    // "plugin:prettier/recommended"
   ],
 
   // 個別のルール設定
