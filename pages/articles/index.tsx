@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
-import sty from '../../components/newContents/newContents.module.scss'
+import sty from '../../components/newContents/newContents.module.css'
 
 import type { Article } from '../../types/article'
 import Header from '../../components/layouts/Header/header'
