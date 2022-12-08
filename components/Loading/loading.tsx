@@ -10,7 +10,7 @@ export default function Loading({ isShow }: Props) {
       style={{
         opacity: isShow ? 1 : 0,
         transition: '0.5s',
-        // display: isShow ? 'block' : 'none',
+        display: isShow ? 'block' : 'none',
       }}
       className={styles.loading}
     >
