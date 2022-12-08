@@ -1,0 +1,26 @@
+.article {
+  width: calc(100% - 276px);
+  &__topImg {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  &__title {
+    width: 820px;
+    margin: 0 auto 16px;
+    font-size: 2.4rem;
+  }
+  &__date {
+    width: 820px;
+    margin: 0 auto 100px;
+    font-size: 1.4rem;
+  }
+  &__content {
+    width: 820px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    & img {
+      max-width: 100%;
+    }
+  }
+}
