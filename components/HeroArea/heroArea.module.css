@@ -28,6 +28,7 @@
 .heroArea__anchor > p {
   position: absolute;
   left: 24px;
+  bottom: 14%;
   z-index: 11;
 }
 .heroArea__anchor__category {
@@ -57,6 +58,13 @@
   color: #fff;
   border: none;
   background-color: transparent;
+}
+@media (max-width: 767px) {
+  .heroArea__anchor > p {
+    color: #fff;
+    left: 16px;
+    bottom: 14%;
+  }
 }
 
 .swiperPagination {
@@ -122,4 +130,15 @@
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .swiperPagination {
+    font-size: 1.2rem;
+    bottom: 12px !important;
+  }
+  .swiperButtonPrev,
+.swiperButtonNext {
+    display: none;
+  }
 }/*# sourceMappingURL=heroArea.module.css.map */

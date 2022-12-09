@@ -1,8 +1,9 @@
 .newCon {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .newCon__title {
+  margin-top: 0;
   margin-bottom: 60px;
   text-align: center;
   font-size: 3.2rem;
@@ -78,4 +79,19 @@
 }
 .newCon__post__item p {
   transition: all 0.3s;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .newCon__post {
+    display: block;
+    margin: 0 16px;
+  }
+  .newCon__post__title {
+    margin-bottom: 40px;
+  }
+  .newCon__post__item {
+    width: 100%;
+    display: block;
+    margin-bottom: 24px;
+  }
 }/*# sourceMappingURL=newContents.module.css.map */

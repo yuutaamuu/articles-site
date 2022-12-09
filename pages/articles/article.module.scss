@@ -23,4 +23,33 @@
       max-width: 100%;
     }
   }
+  @media (max-width: 767px) {
+    width: 100%;
+    &__topImg {
+      margin-bottom: 40px;
+    }
+    &__title {
+      width: 100%;
+      margin: 0 0 16px;
+      padding: 0 16px;
+      font-size: 2rem;
+      box-sizing: border-box;
+    }
+    &__date {
+      width: 100%;
+      margin: 0 0 40px;
+      padding: 0 16px;
+      font-size: 1.2rem;
+    }
+    &__content {
+      width: 100%;
+      margin: 0;
+      padding: 0 16px;
+      font-size: 1.6rem;
+      line-height: 1.8;
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
 }

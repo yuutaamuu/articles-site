@@ -13,6 +13,7 @@ type Props = {
 }
 
 export default function ArticleId({ blog, specials }: Props) {
+  console.log(blog.eyecatch.url)
   return (
     <div className={styles.container}>
       <Head>
@@ -61,7 +62,7 @@ export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: 'blogs' })
 
   const paths = data.contents.map((content: any) => `/articles/${content.id}`)
-  return { paths, fallback: false }
+  return { paths, fallback: true }
 }
 
 export const getStaticProps = async (context: any) => {

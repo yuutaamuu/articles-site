@@ -36,9 +36,9 @@ export default function HeroArea({ tops }: Props) {
           <SwiperSlide key={top.id}>
             <a className={styles.heroArea__anchor} href={`/articles/${top.id}`}>
               <img src={top.eyecatch.url} alt="" />
-              <p className={styles.heroArea__anchor__category}>
+              {/* <p className={styles.heroArea__anchor__category}>
                 {top.category.name}
-              </p>
+              </p> */}
               <p className={styles.heroArea__anchor__title}>{top.title}</p>
             </a>
           </SwiperSlide>

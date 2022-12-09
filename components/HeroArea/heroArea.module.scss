@@ -27,6 +27,7 @@
     & > p {
       position: absolute;
       left: 24px;
+      bottom: 14%;
       z-index: 11;
     }
     &__category {
@@ -56,6 +57,15 @@
       color: #fff;
       border: none;
       background-color: transparent;
+    }
+  }
+  @media (max-width: 767px) {
+    &__anchor {
+      & > p {
+        color: #fff;
+        left: 16px;
+        bottom: 14%;
+      }
     }
   }
 }
@@ -122,5 +132,16 @@
     letter-spacing: 0;
     font-variant: initial;
     line-height: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiperPagination {
+    font-size: 1.2rem;
+    bottom: 12px !important;
+  }
+  .swiperButtonPrev,
+  .swiperButtonNext {
+    display: none;
   }
 }
