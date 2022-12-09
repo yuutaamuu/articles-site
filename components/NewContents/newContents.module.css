@@ -2,6 +2,11 @@
   width: 100%;
   margin-top: 80px;
 }
+@media (max-width: 767px) {
+  .newCon {
+    margin-top: 40px;
+  }
+}
 .newCon__title {
   margin-top: 0;
   margin-bottom: 60px;

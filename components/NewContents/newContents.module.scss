@@ -1,6 +1,9 @@
 .newCon {
   width: 100%;
   margin-top: 80px;
+  @media (max-width: 767px) {
+    margin-top: 40px;
+  }
   &__title {
     margin-top: 0;
     margin-bottom: 60px;
