@@ -37,7 +37,7 @@ export default function Home({ blogs, specials }: Props) {
                   </div>
 
                   <h2>{blog.title}</h2>
-                  <p>{blog.publishedAt}</p>
+                  <p>{new Date(blog.publishedAt).toLocaleDateString()}</p>
                 </a>
               ))}
             </div>

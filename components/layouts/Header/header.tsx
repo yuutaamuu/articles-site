@@ -35,9 +35,8 @@ export default function Header({ specials }: Props) {
               key={blog.id}
             >
               <img src={blog.eyecatch.url} alt="" />
-              {/* <a href="#">移住</a> */}
               <h2>{blog.title}</h2>
-              <p>{blog.publishedAt}</p>
+              <p>{new Date(blog.publishedAt).toLocaleDateString()}</p>
             </a>
           ))}
         </div>

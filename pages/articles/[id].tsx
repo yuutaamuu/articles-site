@@ -29,7 +29,9 @@ export default function ArticleId({ blog, specials }: Props) {
             alt=""
           />
           <h1 className={style.article__title}>{blog.title}</h1>
-          <p className={style.article__date}>{blog.publishedAt}</p>
+          <p className={style.article__date}>
+            {new Date(blog.publishedAt).toLocaleDateString()}
+          </p>
           <div
             className={style.article__content}
             dangerouslySetInnerHTML={{

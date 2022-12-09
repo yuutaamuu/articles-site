@@ -21,7 +21,7 @@ export default function SpecialContents({ specials }: Props) {
             </div>
             {/* <a href="#">移住</a> */}
             <h2>{blog.title}</h2>
-            <p>{blog.publishedAt}</p>
+            <p>{new Date(blog.publishedAt).toLocaleDateString()}</p>
           </a>
         ))}
       </div>
