@@ -4,7 +4,7 @@ import { client } from '../../libs/client'
 export const getAllContents = async () => {
   const allContents = await client.get({
     endpoint: 'blogs',
-    queries: { limit: 100 },
+    queries: { limit: 100, filters: `category[not_equals]0zey-0y-no4i` },
   })
   return allContents.contents
 }

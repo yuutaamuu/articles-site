@@ -30,6 +30,9 @@
   }
   .article__topImg {
     margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.8s;
   }
   .article__title {
     width: 100%;
@@ -37,12 +40,18 @@
     padding: 0 16px;
     font-size: 2rem;
     box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s;
   }
   .article__date {
     width: 100%;
     margin: 0 0 40px;
     padding: 0 16px;
     font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1.2s;
   }
   .article__content {
     width: 100%;
@@ -50,6 +59,9 @@
     padding: 0 16px;
     font-size: 1.6rem;
     line-height: 1.8;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1.4s;
   }
   .article__content img {
     max-width: 100%;

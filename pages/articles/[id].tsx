@@ -6,6 +6,7 @@ import { Article } from '../../types/article'
 import { getSingleContent, getSpecialContents } from '../api/getContents'
 import styles from '../../styles/Home.module.css'
 import style from './article.module.css'
+import { useEffect, useState } from 'react'
 
 type Props = {
   blog: Article
@@ -13,6 +14,18 @@ type Props = {
 }
 
 export default function ArticleId({ blog, specials }: Props) {
+  const [isTrue, setIsTrue] = useState(true)
+
+  useEffect(() => {
+    const appear = setTimeout(() => {
+      setIsTrue(false)
+    }, 3000)
+
+    return () => {
+      clearTimeout(appear)
+    }
+  }, [])
+
   return (
     <div className={styles.container}>
       <Head>
@@ -24,15 +37,37 @@ export default function ArticleId({ blog, specials }: Props) {
         <Header specials={specials}></Header>
         <main className={style.article}>
           <img
+            style={{
+              opacity: isTrue ? 0 : 1,
+              transform: isTrue ? 'translateY(10px)' : 'translateY(0)',
+            }}
             className={style.article__topImg}
             src={blog.eyecatch.url}
             alt=""
           />
-          <h1 className={style.article__title}>{blog.title}</h1>
-          <p className={style.article__date}>
+          <h1
+            style={{
+              opacity: isTrue ? 0 : 1,
+              transform: isTrue ? 'translateY(10px)' : 'translateY(0)',
+            }}
+            className={style.article__title}
+          >
+            {blog.title}
+          </h1>
+          <p
+            style={{
+              opacity: isTrue ? 0 : 1,
+              transform: isTrue ? 'translateY(10px)' : 'translateY(0)',
+            }}
+            className={style.article__date}
+          >
             {new Date(blog.publishedAt).toLocaleDateString()}
           </p>
           <div
+            style={{
+              opacity: isTrue ? 0 : 1,
+              transform: isTrue ? 'translateY(10px)' : 'translateY(0)',
+            }}
             className={style.article__content}
             dangerouslySetInnerHTML={{
               __html: `${blog.content}`,

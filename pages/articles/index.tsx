@@ -35,7 +35,6 @@ export default function Home({ blogs, specials }: Props) {
                   <div>
                     <img src={blog.eyecatch.url} alt="" />
                   </div>
-
                   <h2>{blog.title}</h2>
                   <p>{new Date(blog.publishedAt).toLocaleDateString()}</p>
                 </a>
