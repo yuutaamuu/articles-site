@@ -6,6 +6,7 @@ import sty from '../../components/NewContents/newContents.module.css'
 import type { Article } from '../../types/article'
 import Header from '../../components/layouts/Header/header'
 import { getAllContents, getSpecialContents } from '../api/getContents'
+import Link from 'next/link'
 
 type Props = {
   blogs: Array<Article>
@@ -27,7 +28,7 @@ export default function Home({ blogs, specials }: Props) {
             <h2 className={sty.newCon__title}>記事一覧</h2>
             <div className={sty.newCon__post}>
               {blogs.map((blog) => (
-                <a
+                <Link
                   className={sty.newCon__post__item}
                   href={`/articles/${blog.id}`}
                   key={blog.id}
@@ -37,7 +38,7 @@ export default function Home({ blogs, specials }: Props) {
                   </div>
                   <h2>{blog.title}</h2>
                   <p>{new Date(blog.publishedAt).toLocaleDateString()}</p>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

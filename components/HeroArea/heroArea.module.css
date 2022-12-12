@@ -71,13 +71,12 @@
 
 .swiperButtonPrev {
   position: absolute;
-  top: 50%;
+  bottom: 20px;
   right: auto;
-  left: 15px;
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
-  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
-  z-index: 10;
+  left: 40%;
+  width: 24px;
+  height: 24px;
+  z-index: 11;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -88,7 +87,7 @@
   color: #fff;
   content: "prev";
   font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
+  font-size: 24px;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
@@ -97,13 +96,12 @@
 
 .swiperButtonNext {
   position: absolute;
-  top: 50%;
-  right: 15px;
+  bottom: 20px;
+  right: 40%;
   left: auto;
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
-  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
-  z-index: 10;
+  width: 24px;
+  height: 24px;
+  z-index: 11;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -114,7 +112,7 @@
   color: #fff;
   content: "next";
   font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
+  font-size: 24px;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
@@ -130,4 +128,5 @@
 .swiperButtonNext {
     display: none;
   }
-}/*# sourceMappingURL=heroArea.module.css.map */
+}
+/*# sourceMappingURL=heroArea.module.css.map */

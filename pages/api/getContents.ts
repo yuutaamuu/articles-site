@@ -32,6 +32,7 @@ export const getSingleContent = async (id: string) => {
   const singleContent = await client.get({
     endpoint: 'blogs',
     contentId: id,
+    queries: { limit: 1 },
   })
   return singleContent
 }

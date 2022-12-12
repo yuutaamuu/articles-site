@@ -1,5 +1,6 @@
 import styles from './newContents.module.css'
 import type { Article } from '../../types/article'
+import Link from 'next/link'
 
 type Props = {
   blogs: Array<Article>
@@ -11,7 +12,7 @@ export default function NewContents({ blogs }: Props) {
       <h2 className={styles.newCon__title}>最新記事</h2>
       <div className={styles.newCon__post}>
         {blogs.map((blog) => (
-          <a
+          <Link
             className={styles.newCon__post__item}
             href={`/articles/${blog.id}`}
             key={blog.id}
@@ -23,7 +24,7 @@ export default function NewContents({ blogs }: Props) {
             {/* <a href="#">移住</a> */}
             <h2>{blog.title}</h2>
             <p>{new Date(blog.publishedAt).toLocaleDateString()}</p>
-          </a>
+          </Link>
         ))}
       </div>
     </div>

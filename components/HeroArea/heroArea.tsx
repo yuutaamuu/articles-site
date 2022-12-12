@@ -27,8 +27,8 @@ export default function HeroArea({ tops }: Props) {
         // effect="coverflow"
         fadeEffect={{ crossFade: true }}
         autoplay={{
-          delay: 2500,
-          disableOnInteraction: true,
+          delay: 5000,
+          disableOnInteraction: false,
         }}
         loop={true}
       >
